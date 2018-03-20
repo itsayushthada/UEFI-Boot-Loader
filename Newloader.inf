@@ -1,0 +1,33 @@
+## @file
+#  
+#  License for UEFI BootLoaderEfi is GNU GPL
+#  
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Newloader
+  FILE_GUID                      = 92e0e731-4f7f-4e93-8fab-1d46ee8d580b
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  Newloader.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
